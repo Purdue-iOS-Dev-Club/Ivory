@@ -1,5 +1,7 @@
 # Ivory
 
+[![Join the chat at https://gitter.im/Purdue-iOS-Dev-Club/Ivory](https://badges.gitter.im/Purdue-iOS-Dev-Club/Ivory.svg)](https://gitter.im/Purdue-iOS-Dev-Club/Ivory?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### ETA
 
 March/April/May 2016
