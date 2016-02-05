@@ -14,9 +14,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let screenBounds = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: screenBounds)
+        
+        let accountSB = UIStoryboard(name: "Account", bundle: nil)
+        let accountVC = accountSB.instantiateInitialViewController()
+        window?.rootViewController = accountVC
+        
+        /**
+         * Jump to Main directly if the user has already signed in
+         *
+         * let mainSB = UIStoryboard(name: "Main", bundle: nil)
+         * let mainVC = mainSB.instantiateInitialViewController()
+         * window?.rootViewController = mainVC
+         */
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

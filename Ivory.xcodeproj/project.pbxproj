@@ -8,13 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE788D1C6524F400E75491 /* AppDelegate.swift */; };
-		5EDE78901C6524F400E75491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE788F1C6524F400E75491 /* ViewController.swift */; };
-		5EDE78931C6524F400E75491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78911C6524F400E75491 /* Main.storyboard */; };
+		5EDE78931C6524F400E75491 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78911C6524F400E75491 /* Account.storyboard */; };
 		5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78941C6524F400E75491 /* Ivory.xcdatamodeld */; };
 		5EDE78981C6524F400E75491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78971C6524F400E75491 /* Assets.xcassets */; };
 		5EDE789B1C6524F400E75491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78991C6524F400E75491 /* LaunchScreen.storyboard */; };
 		5EDE78A61C6524F400E75491 /* IvoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78A51C6524F400E75491 /* IvoryTests.swift */; };
 		5EDE78B11C6524F400E75491 /* IvoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78B01C6524F400E75491 /* IvoryUITests.swift */; };
+		5EDE78BF1C65274C00E75491 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78BE1C65274C00E75491 /* AccountViewController.swift */; };
+		5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78C01C65352F00E75491 /* RegisterViewController.swift */; };
+		5EDE78C31C65353D00E75491 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78C21C65353D00E75491 /* SignInViewController.swift */; };
+		5EDE78CB1C65442600E75491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78CA1C65442600E75491 /* Main.storyboard */; };
+		5EDE78CD1C6544A700E75491 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78CC1C6544A700E75491 /* MainViewController.swift */; };
+		5EDE78D11C65496D00E75491 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D01C65496D00E75491 /* ChatRoom.storyboard */; };
+		5EDE78D31C65497A00E75491 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D21C65497A00E75491 /* Profile.storyboard */; };
+		5EDE78D51C65498A00E75491 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D41C65498A00E75491 /* Settings.storyboard */; };
+		5EDE78D71C65499600E75491 /* JoinUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D61C65499600E75491 /* JoinUs.storyboard */; };
+		5EDE78DE1C654D4000E75491 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78DD1C654D4000E75491 /* ChatRoomViewController.swift */; };
+		5EDE78E01C654D4A00E75491 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78DF1C654D4A00E75491 /* ProfileViewController.swift */; };
+		5EDE78E21C654D5300E75491 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78E11C654D5300E75491 /* SettingsViewController.swift */; };
+		5EDE78E41C654D5D00E75491 /* JoinUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78E31C654D5D00E75491 /* JoinUsViewController.swift */; };
+		5EDE78E61C65504000E75491 /* RoomMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78E51C65504000E75491 /* RoomMessagesViewController.swift */; };
+		5EDE78E81C65505700E75491 /* RoomInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78E71C65505700E75491 /* RoomInfoViewController.swift */; };
+		5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78E91C6552F900E75491 /* MembersViewController.swift */; };
+		5EDE78EC1C65530F00E75491 /* SubgroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */; };
+		7E2463D18BA64D6F876DA902 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBA9943E1B353FAFD8585A5 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +54,7 @@
 /* Begin PBXFileReference section */
 		5EDE788A1C6524F400E75491 /* Ivory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDE788D1C6524F400E75491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EDE788F1C6524F400E75491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5EDE78921C6524F400E75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EDE78921C6524F400E75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Account.storyboard; sourceTree = "<group>"; };
 		5EDE78951C6524F400E75491 /* Ivory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ivory.xcdatamodel; sourceTree = "<group>"; };
 		5EDE78971C6524F400E75491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EDE789A1C6524F400E75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,26 @@
 		5EDE78AC1C6524F400E75491 /* IvoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IvoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDE78B01C6524F400E75491 /* IvoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvoryUITests.swift; sourceTree = "<group>"; };
 		5EDE78B21C6524F400E75491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDE78BE1C65274C00E75491 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5EDE78C01C65352F00E75491 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5EDE78C21C65353D00E75491 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5EDE78CA1C65442600E75491 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5EDE78CC1C6544A700E75491 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5EDE78D01C65496D00E75491 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		5EDE78D21C65497A00E75491 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5EDE78D41C65498A00E75491 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		5EDE78D61C65499600E75491 /* JoinUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JoinUs.storyboard; sourceTree = "<group>"; };
+		5EDE78DD1C654D4000E75491 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		5EDE78DF1C654D4A00E75491 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5EDE78E11C654D5300E75491 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5EDE78E31C654D5D00E75491 /* JoinUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUsViewController.swift; sourceTree = "<group>"; };
+		5EDE78E51C65504000E75491 /* RoomMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomMessagesViewController.swift; sourceTree = "<group>"; };
+		5EDE78E71C65505700E75491 /* RoomInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomInfoViewController.swift; sourceTree = "<group>"; };
+		5EDE78E91C6552F900E75491 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubgroupsViewController.swift; sourceTree = "<group>"; };
+		6A9D8096EF08E2B40444C8E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E53D608C8228A6379B9068C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FCBA9943E1B353FAFD8585A5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2463D18BA64D6F876DA902 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BD71749351366B991181588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E53D608C8228A6379B9068C9 /* Pods.debug.xcconfig */,
+				6A9D8096EF08E2B40444C8E6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C9AA160706C754042895BC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA9943E1B353FAFD8585A5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5EDE78811C6524F400E75491 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +137,8 @@
 				5EDE78A41C6524F400E75491 /* IvoryTests */,
 				5EDE78AF1C6524F400E75491 /* IvoryUITests */,
 				5EDE788B1C6524F400E75491 /* Products */,
+				3BD71749351366B991181588 /* Pods */,
+				5C9AA160706C754042895BC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +155,12 @@
 		5EDE788C1C6524F400E75491 /* Ivory */ = {
 			isa = PBXGroup;
 			children = (
-				5EDE788D1C6524F400E75491 /* AppDelegate.swift */,
-				5EDE788F1C6524F400E75491 /* ViewController.swift */,
-				5EDE78911C6524F400E75491 /* Main.storyboard */,
-				5EDE78971C6524F400E75491 /* Assets.xcassets */,
-				5EDE78991C6524F400E75491 /* LaunchScreen.storyboard */,
-				5EDE789C1C6524F400E75491 /* Info.plist */,
-				5EDE78941C6524F400E75491 /* Ivory.xcdatamodeld */,
+				5EDE78C41C65427600E75491 /* Application */,
+				5EDE78C51C65429200E75491 /* Controllers */,
+				5EDE78C61C6542AE00E75491 /* Library */,
+				5EDE78C71C6542B300E75491 /* Models */,
+				5EDE78C91C6542FA00E75491 /* Supporting Files */,
+				5EDE78C81C6542B800E75491 /* Views */,
 			);
 			path = Ivory;
 			sourceTree = "<group>";
@@ -128,6 +183,119 @@
 			path = IvoryUITests;
 			sourceTree = "<group>";
 		};
+		5EDE78C41C65427600E75491 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE788D1C6524F400E75491 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		5EDE78C51C65429200E75491 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78CE1C6544AD00E75491 /* Account */,
+				5EDE78CF1C6544B100E75491 /* Main */,
+				5EDE78D81C654D0600E75491 /* ChatRoom */,
+				5EDE78D91C654D0E00E75491 /* Profile */,
+				5EDE78DA1C654D1300E75491 /* Settings */,
+				5EDE78DB1C654D1700E75491 /* JoinUs */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5EDE78C61C6542AE00E75491 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		5EDE78C71C6542B300E75491 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78941C6524F400E75491 /* Ivory.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5EDE78C81C6542B800E75491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78991C6524F400E75491 /* LaunchScreen.storyboard */,
+				5EDE78911C6524F400E75491 /* Account.storyboard */,
+				5EDE78CA1C65442600E75491 /* Main.storyboard */,
+				5EDE78D01C65496D00E75491 /* ChatRoom.storyboard */,
+				5EDE78D21C65497A00E75491 /* Profile.storyboard */,
+				5EDE78D41C65498A00E75491 /* Settings.storyboard */,
+				5EDE78D61C65499600E75491 /* JoinUs.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5EDE78C91C6542FA00E75491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78971C6524F400E75491 /* Assets.xcassets */,
+				5EDE789C1C6524F400E75491 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EDE78CE1C6544AD00E75491 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78BE1C65274C00E75491 /* AccountViewController.swift */,
+				5EDE78C01C65352F00E75491 /* RegisterViewController.swift */,
+				5EDE78C21C65353D00E75491 /* SignInViewController.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		5EDE78CF1C6544B100E75491 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78CC1C6544A700E75491 /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5EDE78D81C654D0600E75491 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78DD1C654D4000E75491 /* ChatRoomViewController.swift */,
+				5EDE78E51C65504000E75491 /* RoomMessagesViewController.swift */,
+				5EDE78E71C65505700E75491 /* RoomInfoViewController.swift */,
+				5EDE78E91C6552F900E75491 /* MembersViewController.swift */,
+				5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */,
+			);
+			name = ChatRoom;
+			sourceTree = "<group>";
+		};
+		5EDE78D91C654D0E00E75491 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78DF1C654D4A00E75491 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5EDE78DA1C654D1300E75491 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78E11C654D5300E75491 /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		5EDE78DB1C654D1700E75491 /* JoinUs */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE78E31C654D5D00E75491 /* JoinUsViewController.swift */,
+			);
+			name = JoinUs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EDE78B51C6524F400E75491 /* Build configuration list for PBXNativeTarget "Ivory" */;
 			buildPhases = (
+				29472D062FA0C2ABBBCEF43A /* Check Pods Manifest.lock */,
 				5EDE78861C6524F400E75491 /* Sources */,
 				5EDE78871C6524F400E75491 /* Frameworks */,
 				5EDE78881C6524F400E75491 /* Resources */,
+				581467BA6C55D894CCF4D0AF /* Embed Pods Frameworks */,
+				29DBF68B9906A6D66FA76A52 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +403,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDE78D71C65499600E75491 /* JoinUs.storyboard in Resources */,
+				5EDE78D31C65497A00E75491 /* Profile.storyboard in Resources */,
 				5EDE789B1C6524F400E75491 /* LaunchScreen.storyboard in Resources */,
+				5EDE78D11C65496D00E75491 /* ChatRoom.storyboard in Resources */,
 				5EDE78981C6524F400E75491 /* Assets.xcassets in Resources */,
-				5EDE78931C6524F400E75491 /* Main.storyboard in Resources */,
+				5EDE78931C6524F400E75491 /* Account.storyboard in Resources */,
+				5EDE78CB1C65442600E75491 /* Main.storyboard in Resources */,
+				5EDE78D51C65498A00E75491 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +430,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29472D062FA0C2ABBBCEF43A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29DBF68B9906A6D66FA76A52 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581467BA6C55D894CCF4D0AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EDE78861C6524F400E75491 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EDE78901C6524F400E75491 /* ViewController.swift in Sources */,
+				5EDE78DE1C654D4000E75491 /* ChatRoomViewController.swift in Sources */,
+				5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */,
 				5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */,
 				5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */,
+				5EDE78BF1C65274C00E75491 /* AccountViewController.swift in Sources */,
+				5EDE78E81C65505700E75491 /* RoomInfoViewController.swift in Sources */,
+				5EDE78CD1C6544A700E75491 /* MainViewController.swift in Sources */,
+				5EDE78C31C65353D00E75491 /* SignInViewController.swift in Sources */,
+				5EDE78E01C654D4A00E75491 /* ProfileViewController.swift in Sources */,
+				5EDE78E61C65504000E75491 /* RoomMessagesViewController.swift in Sources */,
+				5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */,
+				5EDE78E41C654D5D00E75491 /* JoinUsViewController.swift in Sources */,
+				5EDE78E21C654D5300E75491 /* SettingsViewController.swift in Sources */,
+				5EDE78EC1C65530F00E75491 /* SubgroupsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +532,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5EDE78911C6524F400E75491 /* Main.storyboard */ = {
+		5EDE78911C6524F400E75491 /* Account.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5EDE78921C6524F400E75491 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Account.storyboard;
 			sourceTree = "<group>";
 		};
 		5EDE78991C6524F400E75491 /* LaunchScreen.storyboard */ = {
@@ -399,6 +634,7 @@
 		};
 		5EDE78B61C6524F400E75491 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53D608C8228A6379B9068C9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ivory/Info.plist;
@@ -410,6 +646,7 @@
 		};
 		5EDE78B71C6524F400E75491 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9D8096EF08E2B40444C8E6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ivory/Info.plist;
@@ -486,6 +723,7 @@
 				5EDE78B71C6524F400E75491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EDE78B81C6524F400E75491 /* Build configuration list for PBXNativeTarget "IvoryTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +732,7 @@
 				5EDE78BA1C6524F400E75491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EDE78BB1C6524F400E75491 /* Build configuration list for PBXNativeTarget "IvoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +741,7 @@
 				5EDE78BD1C6524F400E75491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
