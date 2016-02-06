@@ -13,14 +13,15 @@ Gitter
 ### Tasks needed to work on at the moment
 
 * Navigation Drawer - George
-* Register
-* Sign In With Email
-* University and Courses
-* Chat Room: Courses List
-* Chat Room: Messages
-* Chat Room: Info
-* Chat Room Info: Members
-* Chat Room Info: Subgroups
-* Profile
-* Settings
-* Join us
+* Register - Tarang & aditya & Akshat
+* Facebook - Tarang & aditya & Akshat
+* Sign In With Email - Orlando
+* University and Courses - Nikhil
+* Chat Room: Courses List - Aaron
+* Chat Room: Messages - Nikhil
+* Chat Room: Info - Orlando
+* Chat Room Info: Members - Aaron
+* Chat Room Info: Subgroups - George
+* Profile - Siraj
+* Settings - Siraj
+* Join us (WIP)
