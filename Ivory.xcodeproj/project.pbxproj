@@ -34,6 +34,13 @@
 		5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78E91C6552F900E75491 /* MembersViewController.swift */; };
 		5EDE78EC1C65530F00E75491 /* SubgroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */; };
 		7E2463D18BA64D6F876DA902 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBA9943E1B353FAFD8585A5 /* Pods.framework */; };
+		89EC9EF21C6B133F004DECE8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EEB1C6B133F004DECE8 /* Bolts.framework */; };
+		89EC9EF31C6B133F004DECE8 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EC9EEC1C6B133F004DECE8 /* FacebookSDKStrings.bundle */; };
+		89EC9EF41C6B133F004DECE8 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EED1C6B133F004DECE8 /* FBAudienceNetwork.framework */; };
+		89EC9EF51C6B133F004DECE8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EEE1C6B133F004DECE8 /* FBSDKCoreKit.framework */; };
+		89EC9EF61C6B133F004DECE8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EEF1C6B133F004DECE8 /* FBSDKLoginKit.framework */; };
+		89EC9EF71C6B133F004DECE8 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EF01C6B133F004DECE8 /* FBSDKMessengerShareKit.framework */; };
+		89EC9EF81C6B133F004DECE8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EF11C6B133F004DECE8 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +94,13 @@
 		5EDE78E91C6552F900E75491 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
 		5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubgroupsViewController.swift; sourceTree = "<group>"; };
 		6A9D8096EF08E2B40444C8E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		89EC9EEB1C6B133F004DECE8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		89EC9EEC1C6B133F004DECE8 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKStrings.bundle; path = FacebookSDK/FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		89EC9EED1C6B133F004DECE8 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = FacebookSDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		89EC9EEE1C6B133F004DECE8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		89EC9EEF1C6B133F004DECE8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		89EC9EF01C6B133F004DECE8 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		89EC9EF11C6B133F004DECE8 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		E53D608C8228A6379B9068C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FCBA9943E1B353FAFD8585A5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,7 +110,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EC9EF41C6B133F004DECE8 /* FBAudienceNetwork.framework in Frameworks */,
+				89EC9EF51C6B133F004DECE8 /* FBSDKCoreKit.framework in Frameworks */,
+				89EC9EF61C6B133F004DECE8 /* FBSDKLoginKit.framework in Frameworks */,
+				89EC9EF81C6B133F004DECE8 /* FBSDKShareKit.framework in Frameworks */,
 				7E2463D18BA64D6F876DA902 /* Pods.framework in Frameworks */,
+				89EC9EF71C6B133F004DECE8 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				89EC9EF21C6B133F004DECE8 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				FCBA9943E1B353FAFD8585A5 /* Pods.framework */,
+				89EC9EEA1C6B1316004DECE8 /* FacebookSDK */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,6 +323,20 @@
 			name = JoinUs;
 			sourceTree = "<group>";
 		};
+		89EC9EEA1C6B1316004DECE8 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				89EC9EEB1C6B133F004DECE8 /* Bolts.framework */,
+				89EC9EEC1C6B133F004DECE8 /* FacebookSDKStrings.bundle */,
+				89EC9EED1C6B133F004DECE8 /* FBAudienceNetwork.framework */,
+				89EC9EEE1C6B133F004DECE8 /* FBSDKCoreKit.framework */,
+				89EC9EEF1C6B133F004DECE8 /* FBSDKLoginKit.framework */,
+				89EC9EF01C6B133F004DECE8 /* FBSDKMessengerShareKit.framework */,
+				89EC9EF11C6B133F004DECE8 /* FBSDKShareKit.framework */,
+			);
+			name = FacebookSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +408,7 @@
 				TargetAttributes = {
 					5EDE78891C6524F400E75491 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WD5637H5AA;
 					};
 					5EDE78A01C6524F400E75491 = {
 						CreatedOnToolsVersion = 7.2;
@@ -415,6 +451,7 @@
 				5EDE78D11C65496D00E75491 /* ChatRoom.storyboard in Resources */,
 				5EDE78981C6524F400E75491 /* Assets.xcassets in Resources */,
 				5EDE78931C6524F400E75491 /* Account.storyboard in Resources */,
+				89EC9EF31C6B133F004DECE8 /* FacebookSDKStrings.bundle in Resources */,
 				5EDE78CB1C65442600E75491 /* Main.storyboard in Resources */,
 				5EDE78D51C65498A00E75491 /* Settings.storyboard in Resources */,
 			);
@@ -645,10 +682,17 @@
 			baseConfigurationReference = E53D608C8228A6379B9068C9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = Ivory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PurdueiOSDevClub.Ivory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -657,10 +701,17 @@
 			baseConfigurationReference = 6A9D8096EF08E2B40444C8E6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = Ivory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PurdueiOSDevClub.Ivory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
