@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */; };
+		31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738F11C6A300600E4C51E /* UniversityCell.swift */; };
 		5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE788D1C6524F400E75491 /* AppDelegate.swift */; };
 		5EDE78931C6524F400E75491 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78911C6524F400E75491 /* Account.storyboard */; };
 		5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78941C6524F400E75491 /* Ivory.xcdatamodeld */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
+		31A738F11C6A300600E4C51E /* UniversityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityCell.swift; sourceTree = "<group>"; };
 		5EDE788A1C6524F400E75491 /* Ivory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDE788D1C6524F400E75491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EDE78921C6524F400E75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Account.storyboard; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				5EDE78BE1C65274C00E75491 /* AccountViewController.swift */,
 				5EDE78C01C65352F00E75491 /* RegisterViewController.swift */,
 				5EDE78C21C65353D00E75491 /* SignInViewController.swift */,
+				31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */,
+				31A738F11C6A300600E4C51E /* UniversityCell.swift */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EDE78DE1C654D4000E75491 /* ChatRoomViewController.swift in Sources */,
+				31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */,
 				5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */,
 				5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */,
 				5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */,
@@ -496,6 +503,7 @@
 				5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */,
 				5EDE78E41C654D5D00E75491 /* JoinUsViewController.swift in Sources */,
 				5EDE78E21C654D5300E75491 /* SettingsViewController.swift in Sources */,
+				31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */,
 				5EDE78EC1C65530F00E75491 /* SubgroupsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
