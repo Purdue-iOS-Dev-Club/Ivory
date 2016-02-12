@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="axY-Eb-45E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="axY-Eb-45E">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Account View Controller-->
@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-fm-LMf">
-                                <rect key="frame" x="225" y="285" width="150" height="30"/>
-                                <state key="normal" title="Sign In with Facebook"/>
-                                <connections>
-                                    <action selector="signInFacebookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52f-Y1-4dP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsz-LO-MoH">
                                 <rect key="frame" x="254" y="550" width="92" height="30"/>
                                 <state key="normal" title="DEBUG: Main"/>
@@ -32,17 +25,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOx-nd-4hf">
-                                <rect key="frame" x="272" y="323" width="57" height="30"/>
+                                <rect key="frame" x="272" y="474" width="57" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <segue destination="jQK-nx-hQg" kind="show" id="rUw-LG-Z6H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-hU-CNv">
-                                <rect key="frame" x="240" y="361" width="120" height="30"/>
+                                <rect key="frame" x="240" y="512" width="120" height="30"/>
                                 <state key="normal" title="Sign In with Email"/>
                                 <connections>
                                     <segue destination="1yh-DQ-wjN" kind="show" id="oAF-op-2lk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-fm-LMf">
+                                <rect key="frame" x="225" y="436" width="150" height="30"/>
+                                <state key="normal" title="Sign In with Facebook"/>
+                                <connections>
+                                    <action selector="signInFacebookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52f-Y1-4dP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,8 +53,8 @@
                             <constraint firstItem="VOx-nd-4hf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUD-OU-1nn"/>
                             <constraint firstItem="VOx-nd-4hf" firstAttribute="top" secondItem="sgL-fm-LMf" secondAttribute="bottom" constant="8" id="Rnp-f6-cO3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nsz-LO-MoH" secondAttribute="bottom" constant="20" id="Zif-Or-WRQ"/>
-                            <constraint firstItem="sgL-fm-LMf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bD1-ZP-FSd"/>
                             <constraint firstItem="T3W-hU-CNv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDU-92-ADJ"/>
+                            <constraint firstItem="Nsz-LO-MoH" firstAttribute="top" secondItem="T3W-hU-CNv" secondAttribute="bottom" constant="8" id="fpi-bs-12Z"/>
                             <constraint firstItem="T3W-hU-CNv" firstAttribute="top" secondItem="VOx-nd-4hf" secondAttribute="bottom" constant="8" id="gZQ-oa-huS"/>
                         </constraints>
                     </view>
@@ -98,11 +98,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hvr-fJ-kp7" id="ltN-zZ-eMW">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="University Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqI-DQ-rZR">
-                                            <rect key="frame" x="14" y="4" width="571" height="35.5"/>
+                                            <rect key="frame" x="14" y="4" width="571" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b9V-cw-Vlh" id="7Ed-uc-0fT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KYDrawerController
 import FBSDKLoginKit
 
 class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
@@ -79,11 +80,12 @@ class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 
     @IBAction func proceedToMain(sender: AnyObject) {
-        let mainSB = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = mainSB.instantiateInitialViewController()
-        if let vc = mainVC {
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
+        let chatVC = UIStoryboard(name: "ChatRoom", bundle: nil).instantiateInitialViewController()
+        let drawerController     = KYDrawerController()
+        drawerController.mainViewController = chatVC!
+        drawerController.drawerViewController = DrawerViewController()
+        (UIApplication.sharedApplication().delegate as! AppDelegate).drawerController = drawerController
+        self.presentViewController(drawerController, animated: true, completion: nil)
     }
     
     /*

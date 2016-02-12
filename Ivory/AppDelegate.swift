@@ -9,11 +9,13 @@
 import UIKit
 import CoreData
 import FBSDKCoreKit
+import KYDrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var drawerController: KYDrawerController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         

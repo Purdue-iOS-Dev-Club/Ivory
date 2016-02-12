@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */; };
 		31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738F11C6A300600E4C51E /* UniversityCell.swift */; };
+		5EA3E90E1C6E84DC0069CD0F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3E90D1C6E84DC0069CD0F /* Utils.swift */; };
+		5EA3E9101C6E89430069CD0F /* DrawerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA3E90F1C6E89430069CD0F /* DrawerHeaderView.xib */; };
 		5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE788D1C6524F400E75491 /* AppDelegate.swift */; };
 		5EDE78931C6524F400E75491 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78911C6524F400E75491 /* Account.storyboard */; };
 		5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78941C6524F400E75491 /* Ivory.xcdatamodeld */; };
@@ -19,8 +21,7 @@
 		5EDE78BF1C65274C00E75491 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78BE1C65274C00E75491 /* AccountViewController.swift */; };
 		5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78C01C65352F00E75491 /* RegisterViewController.swift */; };
 		5EDE78C31C65353D00E75491 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78C21C65353D00E75491 /* SignInViewController.swift */; };
-		5EDE78CB1C65442600E75491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78CA1C65442600E75491 /* Main.storyboard */; };
-		5EDE78CD1C6544A700E75491 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78CC1C6544A700E75491 /* MainViewController.swift */; };
+		5EDE78CD1C6544A700E75491 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE78CC1C6544A700E75491 /* DrawerViewController.swift */; };
 		5EDE78D11C65496D00E75491 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D01C65496D00E75491 /* ChatRoom.storyboard */; };
 		5EDE78D31C65497A00E75491 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D21C65497A00E75491 /* Profile.storyboard */; };
 		5EDE78D51C65498A00E75491 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE78D41C65498A00E75491 /* Settings.storyboard */; };
@@ -63,6 +64,8 @@
 /* Begin PBXFileReference section */
 		31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
 		31A738F11C6A300600E4C51E /* UniversityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityCell.swift; sourceTree = "<group>"; };
+		5EA3E90D1C6E84DC0069CD0F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5EA3E90F1C6E89430069CD0F /* DrawerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerHeaderView.xib; sourceTree = "<group>"; };
 		5EDE788A1C6524F400E75491 /* Ivory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDE788D1C6524F400E75491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EDE78921C6524F400E75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Account.storyboard; sourceTree = "<group>"; };
@@ -79,8 +82,7 @@
 		5EDE78BE1C65274C00E75491 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		5EDE78C01C65352F00E75491 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5EDE78C21C65353D00E75491 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		5EDE78CA1C65442600E75491 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5EDE78CC1C6544A700E75491 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5EDE78CC1C6544A700E75491 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		5EDE78D01C65496D00E75491 /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
 		5EDE78D21C65497A00E75491 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		5EDE78D41C65498A00E75491 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -155,6 +157,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5EA3E90C1C6E84BE0069CD0F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5EA3E90D1C6E84DC0069CD0F /* Utils.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		5EDE78811C6524F400E75491 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				5EDE78C41C65427600E75491 /* Application */,
+				5EA3E90C1C6E84BE0069CD0F /* Common */,
 				5EDE78C51C65429200E75491 /* Controllers */,
 				5EDE78C61C6542AE00E75491 /* Library */,
 				5EDE78C71C6542B300E75491 /* Models */,
@@ -220,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				5EDE78CE1C6544AD00E75491 /* Account */,
-				5EDE78CF1C6544B100E75491 /* Main */,
+				5EDE78CF1C6544B100E75491 /* Drawer */,
 				5EDE78D81C654D0600E75491 /* ChatRoom */,
 				5EDE78D91C654D0E00E75491 /* Profile */,
 				5EDE78DA1C654D1300E75491 /* Settings */,
@@ -249,11 +260,11 @@
 			children = (
 				5EDE78991C6524F400E75491 /* LaunchScreen.storyboard */,
 				5EDE78911C6524F400E75491 /* Account.storyboard */,
-				5EDE78CA1C65442600E75491 /* Main.storyboard */,
 				5EDE78D01C65496D00E75491 /* ChatRoom.storyboard */,
 				5EDE78D21C65497A00E75491 /* Profile.storyboard */,
 				5EDE78D41C65498A00E75491 /* Settings.storyboard */,
 				5EDE78D61C65499600E75491 /* JoinUs.storyboard */,
+				5EA3E90F1C6E89430069CD0F /* DrawerHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -279,12 +290,12 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
-		5EDE78CF1C6544B100E75491 /* Main */ = {
+		5EDE78CF1C6544B100E75491 /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
-				5EDE78CC1C6544A700E75491 /* MainViewController.swift */,
+				5EDE78CC1C6544A700E75491 /* DrawerViewController.swift */,
 			);
-			name = Main;
+			name = Drawer;
 			sourceTree = "<group>";
 		};
 		5EDE78D81C654D0600E75491 /* ChatRoom */ = {
@@ -445,6 +456,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA3E9101C6E89430069CD0F /* DrawerHeaderView.xib in Resources */,
 				5EDE78D71C65499600E75491 /* JoinUs.storyboard in Resources */,
 				5EDE78D31C65497A00E75491 /* Profile.storyboard in Resources */,
 				5EDE789B1C6524F400E75491 /* LaunchScreen.storyboard in Resources */,
@@ -452,7 +464,6 @@
 				5EDE78981C6524F400E75491 /* Assets.xcassets in Resources */,
 				5EDE78931C6524F400E75491 /* Account.storyboard in Resources */,
 				89EC9EF31C6B133F004DECE8 /* FacebookSDKStrings.bundle in Resources */,
-				5EDE78CB1C65442600E75491 /* Main.storyboard in Resources */,
 				5EDE78D51C65498A00E75491 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,8 +544,9 @@
 				5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */,
 				5EDE78BF1C65274C00E75491 /* AccountViewController.swift in Sources */,
 				5EDE78E81C65505700E75491 /* RoomInfoViewController.swift in Sources */,
-				5EDE78CD1C6544A700E75491 /* MainViewController.swift in Sources */,
+				5EDE78CD1C6544A700E75491 /* DrawerViewController.swift in Sources */,
 				5EDE78C31C65353D00E75491 /* SignInViewController.swift in Sources */,
+				5EA3E90E1C6E84DC0069CD0F /* Utils.swift in Sources */,
 				5EDE78E01C654D4A00E75491 /* ProfileViewController.swift in Sources */,
 				5EDE78E61C65504000E75491 /* RoomMessagesViewController.swift in Sources */,
 				5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */,

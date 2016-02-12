@@ -16,6 +16,7 @@ class ChatRoomViewController: UITableViewController {
         self.title = "Chat Room"
         self.clearsSelectionOnViewWillAppear = true
         
+        self.navigationItem.leftBarButtonItem = Utils.SideMenuBarButtonItem()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "->", style: .Plain, target: self, action: "proceedToMessages")
     }
     
