@@ -29,5 +29,5 @@ Gitter
 * Chat Room Messages: Camera
 
 ### Weekly Goals
-02/05 ~ 02/12: Basic UI
-02/12 ~ 02/19: Server Communication
+* 02/05 ~ 02/12: Basic UI
+* 02/12 ~ 02/19: Server Communication
