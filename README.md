@@ -25,3 +25,9 @@ Gitter
 * Profile - Siraj
 * Settings - Siraj
 * Join us (WIP)
+* Chat Room Messages: Picture
+* Chat Room Messages: Camera
+
+### Weekly Goals
+02/05 ~ 02/12: Basic UI
+02/12 ~ 02/19: Server Communication
