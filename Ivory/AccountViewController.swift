@@ -80,12 +80,13 @@ class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 
     @IBAction func proceedToMain(sender: AnyObject) {
-        let chatVC = UIStoryboard(name: "ChatRoom", bundle: nil).instantiateInitialViewController()
+        let chatNC = UIStoryboard(name: "ChatRoom", bundle: nil).instantiateInitialViewController()
         let drawerController     = KYDrawerController()
-        drawerController.mainViewController = chatVC!
+        drawerController.mainViewController = chatNC!
         drawerController.drawerViewController = DrawerViewController()
         (UIApplication.sharedApplication().delegate as! AppDelegate).drawerController = drawerController
         self.presentViewController(drawerController, animated: true, completion: nil)
+        (chatNC as! UINavigationController).viewControllers[0].navigationItem.leftBarButtonItem = Utils.SideMenuBarButtonItem()
     }
     
     /*

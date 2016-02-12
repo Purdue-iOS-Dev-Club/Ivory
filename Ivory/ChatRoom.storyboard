@@ -135,13 +135,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Group" id="x5n-aG-cKV">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="VVu-43-FIZ" id="bMn-an-T8e"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uAX-z0-ntm">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" textLabel="mqu-yy-QWx" style="IBUITableViewCellStyleDefault" id="uAX-z0-ntm">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uAX-z0-ntm" id="5PN-kW-LOI">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mqu-yy-QWx">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -150,8 +167,20 @@
                             <outlet property="delegate" destination="VVu-43-FIZ" id="xTe-Ov-zIf"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="3yl-ry-spm" id="xkH-yg-Upp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKR-0E-uz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="3yl-ry-spm">
+                    <connections>
+                        <outlet property="delegate" destination="VVu-43-FIZ" id="0Xs-OX-XYU"/>
+                        <outlet property="searchBar" destination="x5n-aG-cKV" id="PzJ-ck-nBn"/>
+                        <outlet property="searchContentsController" destination="VVu-43-FIZ" id="LPe-jA-kfn"/>
+                        <outlet property="searchResultsDataSource" destination="VVu-43-FIZ" id="Hm1-c0-YCk"/>
+                        <outlet property="searchResultsDelegate" destination="VVu-43-FIZ" id="5IQ-le-p76"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3364" y="849"/>
         </scene>
