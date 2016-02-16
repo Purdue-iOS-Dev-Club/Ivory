@@ -10,18 +10,23 @@ import UIKit
 
 class ChatRoomViewController: UITableViewController {
 
+    let groupList = ["CS159","PHYS 172","MA 166","COM 114"]
+    let messageList = ["Nikhil: Anyone know how to do Q7 on HW11?","Sophia: For 10 you do the dot product, so multiply each value in the vector by the corresponding value and then add them all up","Kevin: Is the quiz this week cancelled because of exam?","Kat: The framework for the Simple Explanation is due Friday night guys"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Chat Room"
         self.clearsSelectionOnViewWillAppear = true
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "->", style: .Plain, target: self, action: "proceedToMessages")
+        self.tableView.rowHeight = 100
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .Plain, target: self, action: "proceedToMessages")
     }
     
-    func proceedToMessages() {
+    /*func proceedToMessages() {
         self.performSegueWithIdentifier("toRoomMessages", sender: self)
-    }
+    }*/
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,12 +37,21 @@ class ChatRoomViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return groupList.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("chatCell", forIndexPath: indexPath) as! ChatRoomTableViewCell
+        
+        cell.groupNameLabel.text = groupList[indexPath.row]
+        cell.messageLabel.text = messageList[indexPath.row]
+        
+        return cell
     }
 
     /*

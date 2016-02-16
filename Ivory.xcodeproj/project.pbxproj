@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319F703E1C73C16C003D68F6 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */; };
 		31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */; };
 		31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738F11C6A300600E4C51E /* UniversityCell.swift */; };
 		5EA3E90E1C6E84DC0069CD0F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3E90D1C6E84DC0069CD0F /* Utils.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
 		31A738F11C6A300600E4C51E /* UniversityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityCell.swift; sourceTree = "<group>"; };
 		5EA3E90D1C6E84DC0069CD0F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				5EDE78E71C65505700E75491 /* RoomInfoViewController.swift */,
 				5EDE78E91C6552F900E75491 /* MembersViewController.swift */,
 				5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */,
+				319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */,
 			);
 			name = ChatRoom;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */,
 				5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */,
 				5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */,
+				319F703E1C73C16C003D68F6 /* ChatRoomTableViewCell.swift in Sources */,
 				5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */,
 				5EDE78BF1C65274C00E75491 /* AccountViewController.swift in Sources */,
 				5EDE78E81C65505700E75491 /* RoomInfoViewController.swift in Sources */,
