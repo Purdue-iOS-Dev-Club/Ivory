@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SubgroupsViewController: UITableViewController {
+class SubgroupsViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, UISearchControllerDelegate {
     
     let names = [
         "Group 1",
@@ -32,12 +32,25 @@ class SubgroupsViewController: UITableViewController {
         "Group 19",
         "Group 20",
     ]
+    
+    var searchController: UISearchController!
+    var resultsTableController: SubgroupsResultsViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Subgroups"
         self.clearsSelectionOnViewWillAppear = true
+        
+        resultsTableController = SubgroupsResultsViewController()
+        resultsTableController.tableView.delegate = self
+        searchController = UISearchController(searchResultsController: resultsTableController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.sizeToFit()
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.delegate = self
+        searchController.searchBar.delegate = self
+        definesPresentationContext = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,11 +70,27 @@ class SubgroupsViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: indexPath)
-
         cell.imageView?.image = UIImage(named: "Subgroup")
         cell.textLabel?.text = names[indexPath.row]
-
         return cell
+    }
+    
+    // MARK: UISearchBarDelegate
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    // MARK: UISearchResultsUpdating
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        var searchText = searchController.searchBar.text
+        if searchText == nil {
+            searchText = ""
+        }
+        let resultsController = searchController.searchResultsController as! SubgroupsResultsViewController
+        resultsController.groups = self.names.filter { $0.rangeOfString(searchText!) != nil }
+        resultsController.tableView.reloadData()
     }
 
 }

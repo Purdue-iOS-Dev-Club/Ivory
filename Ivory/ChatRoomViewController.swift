@@ -20,13 +20,7 @@ class ChatRoomViewController: UITableViewController {
         self.clearsSelectionOnViewWillAppear = true
         
         self.tableView.rowHeight = 100
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .Plain, target: self, action: "proceedToMessages")
     }
-    
-    /*func proceedToMessages() {
-        self.performSegueWithIdentifier("toRoomMessages", sender: self)
-    }*/
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -48,8 +42,13 @@ class ChatRoomViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("chatCell", forIndexPath: indexPath) as! ChatRoomTableViewCell
         
+        cell.groupImage.image = UIImage(named: "DefaultGroup")
         cell.groupNameLabel.text = groupList[indexPath.row]
         cell.messageLabel.text = messageList[indexPath.row]
+        
+        if indexPath.row % 2 == 0 {
+            cell.shouldDisplayBlueDot = true
+        }
         
         return cell
     }

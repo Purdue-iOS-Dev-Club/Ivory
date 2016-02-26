@@ -10,6 +10,9 @@
 		319F703E1C73C16C003D68F6 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */; };
 		31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */; };
 		31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738F11C6A300600E4C51E /* UniversityCell.swift */; };
+		5EA2F40F1C80FAD900BA1374 /* JoinUsNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2F40E1C80FAD900BA1374 /* JoinUsNormalCell.swift */; };
+		5EA2F4111C80FAE800BA1374 /* JoinUsLargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2F4101C80FAE800BA1374 /* JoinUsLargeCell.swift */; };
+		5EA2F4131C81086000BA1374 /* SubgroupsResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2F4121C81086000BA1374 /* SubgroupsResultsViewController.swift */; };
 		5EA3E90E1C6E84DC0069CD0F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3E90D1C6E84DC0069CD0F /* Utils.swift */; };
 		5EA3E9101C6E89430069CD0F /* DrawerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA3E90F1C6E89430069CD0F /* DrawerHeaderView.xib */; };
 		5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE788D1C6524F400E75491 /* AppDelegate.swift */; };
@@ -66,6 +69,9 @@
 		319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
 		31A738F11C6A300600E4C51E /* UniversityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityCell.swift; sourceTree = "<group>"; };
+		5EA2F40E1C80FAD900BA1374 /* JoinUsNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUsNormalCell.swift; sourceTree = "<group>"; };
+		5EA2F4101C80FAE800BA1374 /* JoinUsLargeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUsLargeCell.swift; sourceTree = "<group>"; };
+		5EA2F4121C81086000BA1374 /* SubgroupsResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubgroupsResultsViewController.swift; sourceTree = "<group>"; };
 		5EA3E90D1C6E84DC0069CD0F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5EA3E90F1C6E89430069CD0F /* DrawerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerHeaderView.xib; sourceTree = "<group>"; };
 		5EDE788A1C6524F400E75491 /* Ivory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,6 +315,7 @@
 				5EDE78E91C6552F900E75491 /* MembersViewController.swift */,
 				5EDE78EB1C65530F00E75491 /* SubgroupsViewController.swift */,
 				319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */,
+				5EA2F4121C81086000BA1374 /* SubgroupsResultsViewController.swift */,
 			);
 			name = ChatRoom;
 			sourceTree = "<group>";
@@ -333,6 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				5EDE78E31C654D5D00E75491 /* JoinUsViewController.swift */,
+				5EA2F40E1C80FAD900BA1374 /* JoinUsNormalCell.swift */,
+				5EA2F4101C80FAE800BA1374 /* JoinUsLargeCell.swift */,
 			);
 			name = JoinUs;
 			sourceTree = "<group>";
@@ -540,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA2F4131C81086000BA1374 /* SubgroupsResultsViewController.swift in Sources */,
 				5EDE78DE1C654D4000E75491 /* ChatRoomViewController.swift in Sources */,
 				31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */,
 				5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */,
@@ -555,8 +565,10 @@
 				5EDE78E61C65504000E75491 /* RoomMessagesViewController.swift in Sources */,
 				5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */,
 				5EDE78E41C654D5D00E75491 /* JoinUsViewController.swift in Sources */,
+				5EA2F4111C80FAE800BA1374 /* JoinUsLargeCell.swift in Sources */,
 				5EDE78E21C654D5300E75491 /* SettingsViewController.swift in Sources */,
 				31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */,
+				5EA2F40F1C80FAD900BA1374 /* JoinUsNormalCell.swift in Sources */,
 				5EDE78EC1C65530F00E75491 /* SubgroupsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
