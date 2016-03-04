@@ -6,6 +6,7 @@
 //  Copyright © 2016 Purdue iOS Dev Club. All rights reserved.
 //
 
+import Alamofire
 import UIKit
 import KYDrawerController
 import FBSDKLoginKit
@@ -16,6 +17,10 @@ class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
     //START HERE
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged In")
+        Alamofire.request(.GET, "http://162.243.22.154:3939/auth/facebook/token/?access_token=\(FBSDKAccessToken.currentAccessToken().tokenString)")
+            .responseJSON { response in
+                print(response)
+        }
         
         if ((error) != nil)
         {
@@ -45,6 +50,10 @@ class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
         super.viewDidLoad()
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
+            Alamofire.request(.GET, "http://162.243.22.154:3939/auth/facebook/token/?access_token=\(FBSDKAccessToken.currentAccessToken().tokenString)")
+                .responseJSON { response in
+                    print(response)
+            }
             // User is already logged in, do work such as go to next view controller.
         }
         else
