@@ -10,9 +10,13 @@ import UIKit
 
 class ProfileViewController: UITableViewController {
 
- 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // change look of button
+        
+        
         
         self.title = "Profile"
         self.clearsSelectionOnViewWillAppear = true
@@ -43,16 +47,37 @@ class ProfileViewController: UITableViewController {
         }
         return 0
     }
+    @IBAction func onLogout(sender: AnyObject) {
+    }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        var cell: UITableViewCell
+        if indexPath.section == 3 {
+            cell = tableView.dequeueReusableCellWithIdentifier("LogoutCell", forIndexPath: indexPath)
+            cell.layoutMargins = UIEdgeInsetsZero
+            cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, 9999)
+        } else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                cell = tableView.dequeueReusableCellWithIdentifier("AddCell", forIndexPath: indexPath)
+            } else {
+                cell = tableView.dequeueReusableCellWithIdentifier("ClassCell", forIndexPath: indexPath)
+            }
+        } else if indexPath.section == 1 {
+            cell = tableView.dequeueReusableCellWithIdentifier("UniversityCell", forIndexPath: indexPath)
+        } else if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                cell = tableView.dequeueReusableCellWithIdentifier("AvatarCell", forIndexPath: indexPath)
+            } else {
+                cell = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath)
+            }
+        } else {
+            cell = tableView.dequeueReusableCellWithIdentifier("BlankCell", forIndexPath: indexPath)
+        }
+        
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
