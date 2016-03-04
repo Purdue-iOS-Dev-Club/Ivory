@@ -10,6 +10,9 @@
 		319F703E1C73C16C003D68F6 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */; };
 		31A738F01C6A2AB300E4C51E /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */; };
 		31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A738F11C6A300600E4C51E /* UniversityCell.swift */; };
+		5E2A52CF1C8A38C500569559 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A52CE1C8A38C500569559 /* DatabaseHelper.swift */; };
+		5E2A52D11C8A395300569559 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A52D01C8A395300569559 /* Macros.swift */; };
+		5E2A52D31C8A3A3D00569559 /* ServerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A52D21C8A3A3D00569559 /* ServerHelper.swift */; };
 		5EA2F40F1C80FAD900BA1374 /* JoinUsNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2F40E1C80FAD900BA1374 /* JoinUsNormalCell.swift */; };
 		5EA2F4111C80FAE800BA1374 /* JoinUsLargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2F4101C80FAE800BA1374 /* JoinUsLargeCell.swift */; };
 		5EA2F4131C81086000BA1374 /* SubgroupsResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2F4121C81086000BA1374 /* SubgroupsResultsViewController.swift */; };
@@ -46,6 +49,8 @@
 		89EC9EF61C6B133F004DECE8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EEF1C6B133F004DECE8 /* FBSDKLoginKit.framework */; };
 		89EC9EF71C6B133F004DECE8 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EF01C6B133F004DECE8 /* FBSDKMessengerShareKit.framework */; };
 		89EC9EF81C6B133F004DECE8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC9EF11C6B133F004DECE8 /* FBSDKShareKit.framework */; };
+		C715ADDD1C893EFD000EE3CF /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715ADDC1C893EFD000EE3CF /* AvatarCell.swift */; };
+		C715ADDF1C89412F000EE3CF /* LogoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715ADDE1C89412F000EE3CF /* LogoutCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,9 @@
 		319F703D1C73C16C003D68F6 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		31A738EF1C6A2AB300E4C51E /* UniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
 		31A738F11C6A300600E4C51E /* UniversityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityCell.swift; sourceTree = "<group>"; };
+		5E2A52CE1C8A38C500569559 /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		5E2A52D01C8A395300569559 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		5E2A52D21C8A3A3D00569559 /* ServerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerHelper.swift; sourceTree = "<group>"; };
 		5EA2F40E1C80FAD900BA1374 /* JoinUsNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUsNormalCell.swift; sourceTree = "<group>"; };
 		5EA2F4101C80FAE800BA1374 /* JoinUsLargeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUsLargeCell.swift; sourceTree = "<group>"; };
 		5EA2F4121C81086000BA1374 /* SubgroupsResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubgroupsResultsViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 		89EC9EEF1C6B133F004DECE8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		89EC9EF01C6B133F004DECE8 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		89EC9EF11C6B133F004DECE8 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C715ADDC1C893EFD000EE3CF /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		C715ADDE1C89412F000EE3CF /* LogoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutCell.swift; sourceTree = "<group>"; };
 		E53D608C8228A6379B9068C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FCBA9943E1B353FAFD8585A5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -169,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				5EA3E90D1C6E84DC0069CD0F /* Utils.swift */,
+				5E2A52CE1C8A38C500569559 /* DatabaseHelper.swift */,
+				5E2A52D01C8A395300569559 /* Macros.swift */,
+				5E2A52D21C8A3A3D00569559 /* ServerHelper.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -324,6 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				5EDE78DF1C654D4A00E75491 /* ProfileViewController.swift */,
+				C715ADDC1C893EFD000EE3CF /* AvatarCell.swift */,
+				C715ADDE1C89412F000EE3CF /* LogoutCell.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -431,7 +446,7 @@
 				TargetAttributes = {
 					5EDE78891C6524F400E75491 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = WD5637H5AA;
+						DevelopmentTeam = PE36PV3SW2;
 					};
 					5EDE78A01C6524F400E75491 = {
 						CreatedOnToolsVersion = 7.2;
@@ -550,11 +565,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA2F4131C81086000BA1374 /* SubgroupsResultsViewController.swift in Sources */,
+				5E2A52D11C8A395300569559 /* Macros.swift in Sources */,
 				5EDE78DE1C654D4000E75491 /* ChatRoomViewController.swift in Sources */,
 				31A738F21C6A300600E4C51E /* UniversityCell.swift in Sources */,
 				5EDE78EA1C6552F900E75491 /* MembersViewController.swift in Sources */,
+				5E2A52CF1C8A38C500569559 /* DatabaseHelper.swift in Sources */,
 				5EDE78961C6524F400E75491 /* Ivory.xcdatamodeld in Sources */,
 				319F703E1C73C16C003D68F6 /* ChatRoomTableViewCell.swift in Sources */,
+				5E2A52D31C8A3A3D00569559 /* ServerHelper.swift in Sources */,
+				C715ADDD1C893EFD000EE3CF /* AvatarCell.swift in Sources */,
 				5EDE788E1C6524F400E75491 /* AppDelegate.swift in Sources */,
 				5EDE78BF1C65274C00E75491 /* AccountViewController.swift in Sources */,
 				5EDE78E81C65505700E75491 /* RoomInfoViewController.swift in Sources */,
@@ -562,6 +581,7 @@
 				5EDE78C31C65353D00E75491 /* SignInViewController.swift in Sources */,
 				5EA3E90E1C6E84DC0069CD0F /* Utils.swift in Sources */,
 				5EDE78E01C654D4A00E75491 /* ProfileViewController.swift in Sources */,
+				C715ADDF1C89412F000EE3CF /* LogoutCell.swift in Sources */,
 				5EDE78E61C65504000E75491 /* RoomMessagesViewController.swift in Sources */,
 				5EDE78C11C65352F00E75491 /* RegisterViewController.swift in Sources */,
 				5EDE78E41C654D5D00E75491 /* JoinUsViewController.swift in Sources */,
@@ -718,7 +738,7 @@
 				);
 				INFOPLIST_FILE = Ivory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PurdueiOSDevClub.Ivory;
+				PRODUCT_BUNDLE_IDENTIFIER = ansdjknasknkdnfjsdfdsf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -737,7 +757,7 @@
 				);
 				INFOPLIST_FILE = Ivory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PurdueiOSDevClub.Ivory;
+				PRODUCT_BUNDLE_IDENTIFIER = ansdjknasknkdnfjsdfdsf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

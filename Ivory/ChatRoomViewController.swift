@@ -6,6 +6,7 @@
 //  Copyright © 2016 Purdue iOS Dev Club. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
 class ChatRoomViewController: UITableViewController {
