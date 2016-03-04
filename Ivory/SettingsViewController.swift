@@ -51,5 +51,27 @@ class SettingsViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section == 0) {
+            UIApplication.tryURL([
+                "fb://profile/637460682945983", // App
+                "http://www.facebook.com/637460682945983" // Website if app fails
+                ])
+        }
+    }
+    
 
+
+}
+extension UIApplication {
+    class func tryURL(urls: [String]) {
+        let application = UIApplication.sharedApplication()
+        for url in urls {
+            if application.canOpenURL(NSURL(string: url)!) {
+                application.openURL(NSURL(string: url)!)
+                return
+            }
+        }
+    }
 }
