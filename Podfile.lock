@@ -1,13 +1,19 @@
 PODS:
-  - Alamofire (3.2.0)
+  - Alamofire (3.1.2)
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - KYDrawerController (1.1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - JSQMessagesViewController
   - KYDrawerController
 
 SPEC CHECKSUMS:
-  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   KYDrawerController: 222c4d07ed09fa7842011d36d73e3599dcbccab3
 
 COCOAPODS: 0.39.0

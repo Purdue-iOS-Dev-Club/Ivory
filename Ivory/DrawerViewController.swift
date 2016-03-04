@@ -11,7 +11,7 @@ import KYDrawerController
 
 class DrawerViewController: UITableViewController {
     
-    private let sections = ["Chat Room", "Profile", "Settings", "Join us"]
+    private let sections = ["Chat Room", "Profile", "Settings", "Join Us"]
     
     private var selectedIndex = 0
 
