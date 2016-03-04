@@ -11,19 +11,10 @@ import UIKit
 
 class DatabaseHelper: NSObject {
     
-    private var _databaseHelper: DatabaseHelper?
-    let managedContext = ApplicationDelegate.managedObjectContext
-    
-    func sharedInstance() -> DatabaseHelper {
-        if _databaseHelper == nil {
-            _databaseHelper = DatabaseHelper()
-        }
-        return self._databaseHelper!
-    }
-    
     // MARK: Group
     
-    func addNewGroup(id: Int, parentId: Int, silence: Bool, title: String, bulletinMessage: String, bulletinModified: String) -> Bool {
+    class func addNewGroup(id: Int, parentId: Int, silence: Bool, title: String, bulletinMessage: String, bulletinModified: String) -> Bool {
+        let managedContext = ApplicationDelegate.managedObjectContext
         let entity =  NSEntityDescription.entityForName("Group", inManagedObjectContext:managedContext)
         let group = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
         group.setValue(NSNumber(integer: id), forKey: "id")

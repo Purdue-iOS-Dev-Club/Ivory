@@ -10,38 +10,27 @@ import UIKit
 
 class ServerHelper: NSObject {
     
-    private var _serverHelper: ServerHelper?
-    
-    // MARK: Init
-    
-    func sharedInstance() -> ServerHelper {
-        if _serverHelper == nil {
-            _serverHelper = ServerHelper()
-        }
-        return self._serverHelper!
-    }
-    
     // MARK: Group
     
-    func createNewGroup() {
+    class func createNewGroup() {
         
     }
     
-    func joinGroup() {
+    class func joinGroup() {
         
     }
     
     // MARK: User
     
-    func register() {
+    class func register() {
         
     }
     
-    func loginWithEmail() {
+    class func loginWithEmail() {
         
     }
     
-    func loginWithFacebook() {
+    class func loginWithFacebook() {
         
     }
 }
