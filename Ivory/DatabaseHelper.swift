@@ -13,12 +13,12 @@ class DatabaseHelper: NSObject {
     
     // MARK: Group
     
-    class func addNewGroup(id: Int, parentId: Int, silence: Bool, title: String, bulletinMessage: String, bulletinModified: String) -> Bool {
+    class func addNewGroup(id: String, parentId: String, silence: Bool, title: String, bulletinMessage: String, bulletinModified: String) -> Bool {
         let managedContext = ApplicationDelegate.managedObjectContext
         let entity =  NSEntityDescription.entityForName("Group", inManagedObjectContext:managedContext)
         let group = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        group.setValue(NSNumber(integer: id), forKey: "id")
-        group.setValue(NSNumber(integer: parentId), forKey: "parentId")
+        group.setValue(id, forKey: "id")
+        group.setValue(parentId, forKey: "parentId")
         group.setValue(NSNumber(bool: silence), forKey: "silence")
         group.setValue(title, forKey: "title")
         group.setValue(bulletinMessage, forKey: "bulletinMessage")
