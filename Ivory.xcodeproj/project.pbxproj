@@ -446,7 +446,7 @@
 				TargetAttributes = {
 					5EDE78891C6524F400E75491 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = PE36PV3SW2;
+						DevelopmentTeam = N33N8736G4;
 					};
 					5EDE78A01C6524F400E75491 = {
 						CreatedOnToolsVersion = 7.2;
@@ -738,7 +738,7 @@
 				);
 				INFOPLIST_FILE = Ivory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ansdjknasknkdnfjsdfdsf;
+				PRODUCT_BUNDLE_IDENTIFIER = sine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -757,7 +757,7 @@
 				);
 				INFOPLIST_FILE = Ivory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ansdjknasknkdnfjsdfdsf;
+				PRODUCT_BUNDLE_IDENTIFIER = sine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
