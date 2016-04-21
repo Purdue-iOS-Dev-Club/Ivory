@@ -5,3 +5,4 @@ use_frameworks!
 pod 'Alamofire', '~> 3.0'
 pod 'KYDrawerController'
 pod 'JSQMessagesViewController'
+pod 'Starscream', '~> 1.1.3'

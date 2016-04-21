@@ -19,10 +19,12 @@ class RoomMessagesViewController: JSQMessagesViewController, UIActionSheetDelega
         super.viewDidLoad()
         
         self.title = "Room Messages"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "->", style: .Plain, target: self, action: "proceedToInfo")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "->", style: .Plain, target: self, action: #selector(proceedToInfo))
         
         self.senderId = "0"
         self.senderDisplayName = "Steve Jobs"
+        
+        self.avatars = ["0": JSQMessagesAvatarImage.avatarWithImage(UIImage(named: "User"))]
     }
     
     func proceedToInfo() {

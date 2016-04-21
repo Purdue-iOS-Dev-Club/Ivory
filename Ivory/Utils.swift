@@ -14,7 +14,7 @@ class Utils: NSObject {
     // MARK: Side Menu
     
     class func SideMenuBarButtonItem() -> UIBarButtonItem {
-        return UIBarButtonItem(image: UIImage(named: "Menu"), style: .Done, target: self, action: "_sideMenuButtonTapped")
+        return UIBarButtonItem(image: UIImage(named: "Menu"), style: .Done, target: self, action: #selector(_sideMenuButtonTapped))
     }
     
     class func _sideMenuButtonTapped() {

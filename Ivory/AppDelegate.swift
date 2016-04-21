@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var drawerController: KYDrawerController?
+    var wsclient: WebSocketClient
+    var tokenString: String?
+    
+    override init() {
+        wsclient = WebSocketClient.sharedInstance
+        super.init()
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         

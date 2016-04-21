@@ -14,9 +14,17 @@ import Alamofire
 var currentUserId: String?
 var currentUserToken: String?
 
-
-
 class ServerHelper: NSObject {
+    
+    // WebSocket functions
+    
+    func authenticate() {
+        ApplicationDelegate.wsclient.writeObject(["token": ApplicationDelegate.tokenString!])
+    }
+    
+    func sendMessage() {
+        
+    }
     
     // MARK: Group
     
@@ -49,8 +57,8 @@ class ServerHelper: NSObject {
                 print(response.result.value)
 
                 let responseResult = response.result.value as! NSDictionary
-                currentUserId = responseResult["profile"]!["_id"] as! String
-                currentUserToken = responseResult["token"] as! String
+                currentUserId = responseResult["profile"]!["_id"] as? String
+                currentUserToken = responseResult["token"] as? String
                 
                 completion(result: responseResult, error: nil)
             }

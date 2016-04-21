@@ -31,7 +31,7 @@ class JoinUsViewController: UITableViewController {
         
         self.title = "Join Us"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Send", style: UIBarButtonItemStyle.Done, target: self, action: "_sendRequest")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Send", style: UIBarButtonItemStyle.Done, target: self, action: #selector(_sendRequest))
     }
 
     override func didReceiveMemoryWarning() {
