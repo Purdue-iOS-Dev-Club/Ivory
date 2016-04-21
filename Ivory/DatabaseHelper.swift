@@ -31,4 +31,29 @@ class DatabaseHelper: NSObject {
         }
         return success
     }
+    
+    class func addMessage(senderId: String, recipientId: String, message: String, group: Int) -> Bool {
+        let managedContext = ApplicationDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest()
+        fetchRequest.entity = NSEntityDescription.entityForName("Group", inManagedObjectContext:managedContext)
+        fetchRequest.predicate = NSPredicate(format: "id == %@", recipientId)
+        let result = try! managedContext.executeFetchRequest(fetchRequest)
+        assert(result.count == 1)
+        let group = result[0] as! NSManagedObject
+        let messages = group.valueForKey("messages")
+        
+        let entity =  NSEntityDescription.entityForName("Message", inManagedObjectContext:managedContext)
+        let message = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        message.setValue(senderId, forKey: "userId")
+        message.setValue(message, forKey: "text")
+        messages?.addObject(message)
+        
+        var success = true
+        do {
+            try managedContext.save()
+        } catch {
+            success = false
+        }
+        return success
+    }
 }
