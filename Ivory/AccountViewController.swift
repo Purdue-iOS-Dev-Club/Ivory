@@ -48,22 +48,22 @@ class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (FBSDKAccessToken.currentAccessToken() != nil)
-        {
-            Alamofire.request(.GET, "http://162.243.22.154:3939/auth/facebook/token/?access_token=\(FBSDKAccessToken.currentAccessToken().tokenString)")
-                .responseJSON { response in
-                    print(response)
-            }
-            // User is already logged in, do work such as go to next view controller.
-        }
-        else
-        {
-            let loginView : FBSDKLoginButton = FBSDKLoginButton()
-            self.view.addSubview(loginView)
-            loginView.center = self.view.center
-            loginView.readPermissions = ["public_profile", "email", "user_friends"]
-            loginView.delegate = self
-        }
+//        if (FBSDKAccessToken.currentAccessToken() != nil)
+//        {
+//            Alamofire.request(.GET, "http://162.243.22.154:3939/auth/facebook/token/?access_token=\(FBSDKAccessToken.currentAccessToken().tokenString)")
+//                .responseJSON { response in
+//                    print(response)
+//            }
+//            // User is already logged in, do work such as go to next view controller.
+//        }
+//        else
+//        {
+//            let loginView : FBSDKLoginButton = FBSDKLoginButton()
+//            self.view.addSubview(loginView)
+//            loginView.center = self.view.center
+//            loginView.readPermissions = ["public_profile", "email", "user_friends"]
+//            loginView.delegate = self
+//        }
 
     }
     
@@ -85,7 +85,10 @@ class AccountViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     @IBAction func signInFacebookAction(sender: AnyObject) {
-        self.performSegueWithIdentifier("toUniversity", sender: self)
+//        self.performSegueWithIdentifier("toUniversity", sender: self)
+        ServerHelper.loginWithFacebook(self) { (result, error) -> () in
+            print(result!)
+        }
     }
 
     @IBAction func proceedToMain(sender: AnyObject) {
