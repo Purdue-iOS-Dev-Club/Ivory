@@ -1,6 +1,6 @@
 // ResponseSerialization.swift
 //
-// Copyright (c) 2014–2016 Alamofire Software Foundation (http://alamofire.org/)
+// Copyright (c) 2014–2015 Alamofire Software Foundation (http://alamofire.org/)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -119,25 +119,16 @@ extension Request {
                 self.delegate.error
             )
 
-            let requestCompletedTime = self.endTime ?? CFAbsoluteTimeGetCurrent()
-            let initialResponseTime = self.delegate.initialResponseTime ?? requestCompletedTime
+            dispatch_async(queue ?? dispatch_get_main_queue()) {
+                let response = Response<T.SerializedObject, T.ErrorObject>(
+                    request: self.request,
+                    response: self.response,
+                    data: self.delegate.data,
+                    result: result
+                )
 
-            let timeline = Timeline(
-                requestStartTime: self.startTime ?? CFAbsoluteTimeGetCurrent(),
-                initialResponseTime: initialResponseTime,
-                requestCompletedTime: requestCompletedTime,
-                serializationCompletedTime: CFAbsoluteTimeGetCurrent()
-            )
-
-            let response = Response<T.SerializedObject, T.ErrorObject>(
-                request: self.request,
-                response: self.response,
-                data: self.delegate.data,
-                result: result,
-                timeline: timeline
-            )
-
-            dispatch_async(queue ?? dispatch_get_main_queue()) { completionHandler(response) }
+                completionHandler(response)
+            }
         }
 
         return self
